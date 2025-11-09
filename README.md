@@ -4,7 +4,6 @@
 Linting and validation utilities for [MarkupKit](https://github.com/gk-brown/MarkupKit) integrated into Xcode.
 
 1. [Getting started with `mklint`](#mklintsh)
-2. [Future plans](#context-aware-markup-validation)
 
 ## mklint.sh
 
@@ -46,17 +45,3 @@ curl -O https://raw.githubusercontent.com/jarrroo/MarkupKitLint/master/Scripts/m
 Now, whenever you build your project, the linter will run and highlight any issues it finds right inside Xcode.
 
 ![](Documentation/mklint_xcode_integration.png)
-
-## Future plans
-
-### Context-aware markup validation
-
-📣 Tracked by issue [#1](https://github.com/jarrroo/MarkupKitLint/issues/1)
-
-`xmllint` supports passing in an XML schema. This can be used to provide more in depth validation beyond simple XML syntax. Currently working on:
-
-* Creating a basic schema which describes MarkupKit's default set of markup semantics, including knowledge of basic components (like `LMColumnView`, `LMRowView`) and attributes (like `spacing`, `width`, `height`). 
-* Auto-generating schema from a running MarkupKit instance
-
-Pie-in-the-sky:
-* Augment the standard schema with the end user app's custom markup element types. This would provide compile-time validation of all MarkupKit markup.
